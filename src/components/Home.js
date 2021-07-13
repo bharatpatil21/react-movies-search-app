@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 // Config
 import { POPULAR_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL, POSTER_SIZE } from '../config';
@@ -7,6 +7,7 @@ import { POPULAR_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL, POSTER_SIZE } from '../con
 import HeroImage from './HeroImage';
 import Grid from './Grid';
 import Thumb from './Thumb';
+import Spinner from './Spinner';
 
 // Hook
 import { useHomeFetch } from '../hooks/useHomeFetch';
@@ -40,6 +41,7 @@ const Home = () => {
           />
         ))}
       </Grid>
+      <Spinner/>
     </>
   );
 }
